@@ -1,0 +1,19 @@
+{
+  "name": "playwright-starter-kit",
+  "version": "1.0.0",
+  "description": "Playwright Starter Kit for QA Interviews",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression",
+    "test:api": "npx playwright test --grep @api",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.0.0"
+  }
+}

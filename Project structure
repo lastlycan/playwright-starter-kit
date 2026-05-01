@@ -1,0 +1,15 @@
+.github/workflows/playwright.yml   # CI pipeline
+pages/                             # Page Objects (POM)
+tests/
+  fixtures/test.ts                 # Custom fixtures (POM + ApiClient)
+  smoke.spec.ts                    # Smoke checks (@smoke)
+  ui-flow.spec.ts                  # UI example flow
+  login.spec.ts                    # Login example (POM)
+  api.spec.ts                      # API test via ApiClient (@api)
+utils/
+  apiClient.ts                     # API wrapper
+  testTags.ts                      # Tags (@smoke/@regression/@api)
+
+playwright.config.ts               # Playwright config
+global-setup.ts                    # Optional auth + storageState
+env.example                        # Example env file
